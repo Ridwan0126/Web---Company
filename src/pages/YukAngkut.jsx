@@ -1,5 +1,5 @@
 import React from 'react';
-import BannerImage from '../assets/YukBuang.jpg'; // Replace with your banner image path
+import BannerImage from '../assets/YukAngkut.png'; // Replace with your banner image path
 import PhoneImage from '../assets/Home hp.jpg'; // Replace with your phone image path
 import JoinMovementImage from '../assets/Poster.jpg'; // Replace with your join movement image path
 
