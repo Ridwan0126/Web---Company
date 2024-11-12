@@ -29,7 +29,7 @@ const KuyPointInfo = () => {
 
         {/* Tutorial 1 */}
         <div 
-          className={`cursor-pointer mb-8 p-6 ${selectedStep === 1 ? 'bg-[#55B3A4] text-white' : 'bg-white border-[#55B3A4] text-black'}`} 
+          className={`cursor-pointer mb-8 p-6 ${selectedStep === 1 ? 'bg-[#55B3A4] text-white' : 'bg-[#FBFBFB] overflow-hidden border-[#55B3A4] text-black'}`} 
           onClick={() => handleStepClick(1)}
         >
           <div className="flex items-center">
@@ -47,7 +47,7 @@ const KuyPointInfo = () => {
 
         {/* Tutorial 2 */}
         <div 
-          className={`cursor-pointer mb-8 p-6 ${selectedStep === 2 ? 'bg-[#55B3A4] text-white' : 'bg-white border-[#55B3A4] text-black'}`} 
+          className={`cursor-pointer mb-8 p-6 ${selectedStep === 2 ? 'bg-[#55B3A4] text-white' : 'bg-[#FBFBFB] overflow-hidden border-[#55B3A4] text-black'}`} 
           onClick={() => handleStepClick(2)}
         >
           <div className="flex items-center">

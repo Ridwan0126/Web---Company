@@ -5,10 +5,11 @@ import JoinMovement from "../assets/JoinMovementBanner.png";
 export default function KuyPoint() {
   return (
     <>
-      <main className="grid min-h-full bg-[#FBFBFB] px-6 py-24 sm:py-32 lg:px-8">
-        <div className="place-items-center">
-          <img src={BannerKuyPoint} alt="KuyPoint Banner" />
-        </div>
+    <main className="bg-[#FBFBFB] px-6 py-24 sm:py-32 lg:px-8">
+      {/* Banner */}
+      <div className="w-full mb-8">
+        <img src={BannerKuyPoint} alt="banner sampah" className="w-full object-cover" />
+      </div>
         
         <div className="my-5 mb-24 mx-5 mt-14">
           <KuyPointInfo />
