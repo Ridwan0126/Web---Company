@@ -155,6 +155,7 @@ const YukAngkut = () => {
           </div>
         </div>
       </div>
+      
 
       {/* Poster Bawah */}
       <div className="w-full flex justify-center mt-8 mb-8">
