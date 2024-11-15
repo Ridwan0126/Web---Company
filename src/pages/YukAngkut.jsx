@@ -54,7 +54,7 @@ const YukAngkut = () => {
 
           {/* Langkah 1 */}
           <div 
-            className={`cursor-pointer mb-6 p-6 rounded-lg ${selectedStep === 1 ? 'bg-[#55B3A4] text-white' : 'bg-white border border-[#55B3A4] text-black'}`} 
+            className={`cursor-pointer mb-6 p-6 rounded-lg ${selectedStep === 1 ? 'bg-[#55B3A4] text-white' : 'bg-white border border-[#ffff] text-black'}`} 
             onClick={() => handleStepClick(1)}
           >
             <div className="flex items-center">
@@ -75,7 +75,7 @@ const YukAngkut = () => {
 
           {/* Langkah 2 */}
           <div 
-            className={`cursor-pointer mb-6 p-6 rounded-lg ${selectedStep === 2 ? 'bg-[#55B3A4] text-white' : 'bg-white border border-[#55B3A4] text-black'}`} 
+            className={`cursor-pointer mb-6 p-6 rounded-lg ${selectedStep === 2 ? 'bg-[#55B3A4] text-white' : 'bg-white border border-[#ffff] text-black'}`} 
             onClick={() => handleStepClick(2)}
           >
             <div className="flex items-center">
@@ -94,7 +94,7 @@ const YukAngkut = () => {
 
           {/* Langkah 3 */}
           <div 
-            className={`cursor-pointer mb-6 p-6 rounded-lg ${selectedStep === 3 ? 'bg-[#55B3A4] text-white' : 'bg-white border border-[#55B3A4] text-black'}`} 
+            className={`cursor-pointer mb-6 p-6 rounded-lg ${selectedStep === 3 ? 'bg-[#55B3A4] text-white' : 'bg-white border border-[#ffff] text-black'}`} 
             onClick={() => handleStepClick(3)}
           >
             <div className="flex items-center">
@@ -114,7 +114,7 @@ const YukAngkut = () => {
 
           {/* Langkah 4 */}
           <div 
-            className={`cursor-pointer mb-6 p-6 rounded-lg ${selectedStep === 4 ? 'bg-[#55B3A4] text-white' : 'bg-white border border-[#55B3A4] text-black'}`} 
+            className={`cursor-pointer mb-6 p-6 rounded-lg ${selectedStep === 4 ? 'bg-[#55B3A4] text-white' : 'bg-white border border-[#ffff] text-black'}`} 
             onClick={() => handleStepClick(4)}
           >
             <div className="flex items-center">
@@ -134,7 +134,7 @@ const YukAngkut = () => {
 
           {/* Langkah 5 */}
           <div 
-            className={`cursor-pointer mb-6 p-6 rounded-lg ${selectedStep === 5 ? 'bg-[#55B3A4] text-white' : 'bg-white border border-[#55B3A4] text-black'}`} 
+            className={`cursor-pointer mb-6 p-6 rounded-lg ${selectedStep === 5 ? 'bg-[#55B3A4] text-white' : 'bg-white border border-[#ffff] text-black'}`} 
             onClick={() => handleStepClick(5)}
           >
             <div className="flex items-center">
