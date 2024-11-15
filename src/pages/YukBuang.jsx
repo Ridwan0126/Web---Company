@@ -1,4 +1,21 @@
-export default function YukBuang() {
+import { useState } from 'react';
+import DefaultImage from "../assets/Home.png"; 
+import Step1Image from "../assets/Halaman 1.jpg"; // Gambar untuk Langkah 1
+import Step2Image from "../assets/Halaman 2.jpg"; // Gambar untuk Langkah 2
+import Step3Image from "../assets/Halaman 3.jpg"; // Gambar untuk Langkah 3
+import Step4Image from "../assets/Halaman 4.jpg"; // Gambar untuk Langkah 4
+import Step5Image from "../assets/Halaman 5.jpg"; // Gambar untuk Langkah 5
+import PosterTop from "../assets/YukBuang.jpg"; // Gambar poster atas
+import PosterBottom from "../assets/Poster.jpg"; // Gambar poster bawah
+
+const YukBuang = () => {
+  const [selectedStep, setSelectedStep] = useState(null);
+
+  const handleStepClick = (step) => {
+    setSelectedStep(prevStep => (prevStep === step ? null : step));
+  };
+  
+
   return (
     <div className="flex flex-col items-center">
       
@@ -138,18 +155,17 @@ export default function YukBuang() {
                 5. Nota penjualan digital dapat dilihat pada fitur "MyHistory hehehe"
               </p>
             )}
-    <>
-      <main className="grid min-h-full  bg-[#FBFBFB] px-6 py-24 sm:py-32 lg:px-8">
-        {/* Section 4 */}
-        <div className="my-10 mx-5 text-center">
-          <div className="text-center">
-            <h1 className="mt-4 text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-7xl">
-              Halaman Yuk Buang!
-            </h1>
           </div>
         </div>
-        {/* Section 4 */}
-      </main>
-    </>
+      </div>
+
+      {/* Poster Bawah */}
+      <div className="w-full flex justify-center mt-8 mb-8">
+        <img src={PosterBottom} alt="Join our movement poster" 
+             className="w-[90%] sm:w-[100%] lg:w-[80%] xl:w-[70%] max-w-full" />
+      </div>
+    </div>
   );
-}
+};
+
+export default YukBuang;
