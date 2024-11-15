@@ -132,6 +132,7 @@ const YukBuang = () => {
               </p>
             )}
           </div>
+          
 
           {/* Langkah 5 */}
           <div 
