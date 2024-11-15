@@ -149,7 +149,7 @@ const YukAngkut = () => {
                 2. Terdapat tombol bantuan dan opsi untuk membatalkan di fitur "Order" <br/>
                 3. Admin atau kolektor Yuk pilah akan menghubungi untuk proses penjemputan <br/>
                 4. Kolektor Yuk Pilah akan menimbang dan membayar di tempat <br/>
-                5. Nota penjualan digital dapat dilihat pada fitur  "History"
+                5. Nota penjualan digital dapat dilihat pada fitur  "My History"
               </p>
             )}
           </div>
