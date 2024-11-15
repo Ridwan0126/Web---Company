@@ -14,6 +14,7 @@ const YukBuang = () => {
   const handleStepClick = (step) => {
     setSelectedStep(prevStep => (prevStep === step ? null : step));
   };
+  
 
   return (
     <div className="flex flex-col items-center">
