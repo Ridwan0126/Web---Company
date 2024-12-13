@@ -6,7 +6,7 @@ import Logo from "../assets/reuse.png";
 export default function Tentang() {
   return (
     <>
-      <main className="grid min-h-full  bg-[#FBFBFB] px-6 py-24 sm:py-32 lg:px-8">
+      <main className="grid min-h-full  bg-[#ffff] px-6 py-24 sm:py-32 lg:px-8">
         <div className="place-items-center">
           <img src={BannerSampah} alt="banner sampah" />
         </div>
