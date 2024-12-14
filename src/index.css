@@ -12,6 +12,12 @@ body {
   .sub-menu {
     @apply absolute top-[4.2rem] p-[15px] rounded-[6px] origin-[50%_-170px] backdrop-blur bg-white/[0.04];
   }
+
+  .btn-read-more {
+    @apply inline-block bg-[#55B3A4] text-white py-2 px-4 rounded-md hover:bg-[#49a593] text-center;
+    width: auto; 
+    display: inline-block;
+  }
 }
 
 @layer utilities {
@@ -24,4 +30,12 @@ body {
   .paused {
     animation-play-state: paused;
   }
+}
+
+ol {
+  @apply list-decimal pl-5 text-gray-700; 
+}
+
+li {
+  @apply mb-2; 
 }

@@ -13,7 +13,7 @@ export default function Blog() {
     title: `Kuy Point: Cara Kumpul & Tukar Hadiah`,
     description: `Daur ulang dan dapatkan hadiah! Simak cara mudah mengumpulkan Kuy Point dan menukarkannya dengan reward menarik.`,
     image: images[idx % 3], 
-    link: "#", 
+    link: `/blog/${idx + 1}`,
   }));
 
   return (
