@@ -1,22 +1,42 @@
+import React, { useEffect, useState } from "react";
 import BannerSampah from "../assets/BannerBlog.png"; 
-import BlogImage1 from "../assets/blog1.png"; 
-import BlogImage2 from "../assets/blog2.png";
-import BlogImage3 from "../assets/blog3.png";
-import Blogs from "../components/Blogs"; 
+import Blogs from "../components/Blogs";
 
 export default function Blog() {
-
-  const images = [BlogImage1, BlogImage2, BlogImage3];
-
-  const blogs = Array.from({ length: 12 }).map((_, idx) => ({
-    id: idx + 1,
-    title: `Kuy Point: Cara Kumpul & Tukar Hadiah`,
-    description: `Daur ulang dan dapatkan hadiah! Simak cara mudah mengumpulkan Kuy Point dan menukarkannya dengan reward menarik.`,
-    image: images[idx % 3], 
-    link: `/blog/${idx + 1}`,
-  }));
-
+  const [blogs, setBlogs] = useState([]); 
+  const [error, setError] = useState(null);
+  const stripHtmlTags = (html) => {
+    const doc = new DOMParser().parseFromString(html, 'text/html');
+    return doc.body.textContent || "";
+  };
+  
+  const fetchBlogs = async () => {
+    try {
+      const response = await fetch("http://localhost:5000/api/blogs/published");
+      const data = await response.json();
+  
+      const formattedBlogs = data.map((blog) => ({
+        id: blog.id,
+        title: blog.judul, 
+        description: stripHtmlTags(blog.isiBlog).split(".")[0] + ".", 
+        image: `http://localhost:5000${blog.banner}`,
+        link: `/blog/${blog.id}`,
+      }));
+  
+      setBlogs(formattedBlogs);
+    } catch (error) {
+      setError("Error fetching blogs: " + error.message);
+    }
+  };
+  
+  useEffect(() => {
+    fetchBlogs();
+  }, []);
+  
   return (
-    <Blogs blogs={blogs} banner={BannerSampah} />
+    <div>
+      {error && <p>{error}</p>} {/* Display error message */}
+      <Blogs blogs={blogs} banner={BannerSampah} />
+    </div>
   );
 }
