@@ -5,7 +5,7 @@ import Step2Image from "../assets/Halaman 2.jpg"; // Gambar untuk Langkah 2
 import Step3Image from "../assets/Halaman 3.jpg"; // Gambar untuk Langkah 3
 import Step4Image from "../assets/Halaman 4.jpg"; // Gambar untuk Langkah 4
 import Step5Image from "../assets/Halaman 5.jpg"; // Gambar untuk Langkah 5
-import PosterTop from "../assets/YukAngkut.png"; // Gambar poster atas
+import PosterTop from "../assets/yuk angkut 2.png"; // Gambar poster atas
 import PosterBottom from "../assets/Poster.jpg"; // Gambar poster bawah
 
 const YukAngkut = () => {

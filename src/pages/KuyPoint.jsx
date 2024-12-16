@@ -1,5 +1,5 @@
 import KuyPointInfo from "../components/KuyPointInfo";
-import BannerKuyPoint from "../assets/BannerKuyPoint.png"; 
+import BannerKuyPoint from "../assets/KuyPoint2.png"; 
 import JoinMovement from "../assets/JoinMovementBanner.png";
 
 export default function KuyPoint() {

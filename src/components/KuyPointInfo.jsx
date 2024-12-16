@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import DefaultImage from "../assets/DefaultPhone.png"; 
+import DefaultImage from "../assets/Home.png"; 
 import PhoneKuyPoint from "../assets/PhoneKuyPoint.png"; 
 import AltImage from "../assets/PhoneKuyPoint2.png";
 
