@@ -1,6 +1,6 @@
 import YukAngkutInfo from "../components/YukAngkutInfo";
-import PosterTop from "../assets/YukAngkut.png"; // Gambar poster atas
-import PosterBottom from "../assets/Poster.jpg"; // Gambar poster bawah
+import PosterTop from "../assets/YukAngkut.png"; 
+import PosterBottom from "../assets/Poster.jpg"; 
 
 export default function KuyPoint() {
   return (

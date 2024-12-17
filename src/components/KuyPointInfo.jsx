@@ -36,11 +36,11 @@ const KuyPointInfo = () => {
             <div className={`flex items-center justify-center w-14 h-14 min-w-[56px] min-h-[56px] rounded-full ${selectedStep === 1 ? 'bg-white text-[#55B3A4]' : 'bg-[#55B3A4] text-white'}`}>
               <span>1</span>
             </div>
-            <p className="ml-5 font-bold text-xl">Redeem MS Point</p>
+            <p className="ml-5 font-bold text-xl">Redeem Kuy Point</p>
           </div>
           {selectedStep === 1 && (
             <p className="mt-5">
-              Tukarkan poin Anda dengan saldo DANA atau hadiah menarik lainnya melalui aplikasi Pilah Yuk!
+              1. Kamu dapat menukarkan Kuy Point dengan beragam produk dan layanan, seperti saldo Gopay, OVO, ShopeePay
             </p>
           )}
         </div>
@@ -58,7 +58,7 @@ const KuyPointInfo = () => {
           </div>
           {selectedStep === 2 && (
             <p className="mt-5">
-              Kamu juga bisa mentransfer point ke teman-teman yang menggunakan Pilah Yuk! secara gratis dan langsung.
+              1. Kamu juga bisa mentransfer point ke teman-teman yang menggunakan Pilah Yuk! secara gratis dan langsung.
             </p>
           )}
         </div>

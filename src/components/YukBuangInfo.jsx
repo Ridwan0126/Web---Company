@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import DefaultImage from "../assets/Home.png";
-import Step1Image from "../assets/Halaman 1.jpg";
-import Step2Image from "../assets/Halaman 2.jpg";
-import Step3Image from "../assets/Halaman 3.jpg";
-import Step4Image from "../assets/Halaman 4.jpg";
-import Step5Image from "../assets/Halaman 5.jpg";
+import Step1Image from "../assets/Halaman 1YB.png";
+import Step2Image from "../assets/Halaman 2YB.png";
+import Step3Image from "../assets/Halaman 3YB.png";
+import Step4Image from "../assets/Halaman 4YB.png";
+import Step5Image from "../assets/Halaman 5YB.png";
 
 const YukBuangInfo = () => {
   const [selectedStep, setSelectedStep] = useState(null);
@@ -16,23 +16,23 @@ const YukBuangInfo = () => {
   return (
     <div className="flex flex-col lg:flex-row items-center lg:items-start w-full">
       <div className="lg:w-[40%] flex justify-center">
-        <img
-          src={
-            selectedStep === 1
-              ? Step1Image
-              : selectedStep === 2
-              ? Step2Image
-              : selectedStep === 3
-              ? Step3Image
-              : selectedStep === 4
-              ? Step4Image
-              : selectedStep === 5
-              ? Step5Image
-              : DefaultImage
-          }
-          alt="Yuk Angkut interface"
-          className="w-full lg:w-3/4"
-        />
+      <img
+      src={(
+        selectedStep === 1
+          ? Step1Image
+          : selectedStep === 2
+          ? Step2Image
+          : selectedStep === 3
+          ? Step3Image
+          : selectedStep === 4
+          ? Step4Image
+          : selectedStep === 5
+          ? Step5Image
+          : DefaultImage
+      )}
+      alt="Yuk Buang interface"
+      className="w-full lg:w-3/4"
+    />
       </div>
 
       <div className="lg:w-[60%] lg:pl-10 mt-5 lg:mt-0 text-[#55B3A4]">
@@ -59,7 +59,7 @@ const YukBuangInfo = () => {
           </div>
           {selectedStep === 1 && (
             <p className="mt-5">
-                  1. Pilih jenis sampah yang akan di jemput <br />
+                  1. Pilih jenis sampah yang akan di antar <br />
                   2. Tentukan perkiraan berat sampah <br />
                   3. Pilih sub jenis sampah <br />
                   4. Kemudian tekan tombol selanjutnya
@@ -144,9 +144,9 @@ const YukBuangInfo = () => {
           {selectedStep === 4 && (
             <p className="mt-5">
                 1. Pilih metode pembayaran <br />
-                2. Metode pembayaran menggunakan uang tunai atau kuy points <br/>
+                2. Metode pembayaran menggunakan uang tunai atau Kuy Point <br/>
                 3. Sampah satuan dan dibawah 1kg akan mendapatkan 10 points <br/>
-                4. kuy Points dapat ditukar menjadi gOpay, Ovo, Shopee pay, dsb
+                4. Kuy Point dapat ditukar menjadi Gopay, Ovo, ShopeePay, dsb
             </p>
           )}
         </div>
@@ -168,15 +168,15 @@ const YukBuangInfo = () => {
             >
               <span>5</span>
             </div>
-            <p className="ml-5 font-bold text-xl">Penjemputan dan Pembayaran</p>
+            <p className="ml-5 font-bold text-xl">Pengantaran dan Pembayaran</p>
           </div>
           {selectedStep === 5 && (
             <p className="mt-5">
-                  1. Lacak progress permintaan Yuk angkut di fitur "Order" <br/>
-                  2. Terdapat tombol bantuan dan opsi untuk membatalkan di fitur "Order" <br/>
-                  3. Admin atau kolektor Yuk pilah akan menghubungi untuk proses penjemputan <br/>
-                  4. Kolektor Yuk Pilah akan menimbang dan membayar di tempat <br/>
-                  5. Nota penjualan digital dapat dilihat pada fitur "History"
+                  1. Lihat panduan pengantaran dan lacak progress permintaan Yuk Buang di fitur “My Order” <br/>
+                  2. Terdapat tombol bantuan dan opsi untuk membatalkan di fitur "My Order" <br/>
+                  3. Admin atau kolektor Pilah Yuk! akan menghubungi untuk proses Yuk Buang <br/>
+                  4. Kolektor Pilah Yuk! akan menimbang dan membayar di titik Yuk Buang <br/>
+                  5. Nota penjualan digital dapat dilihat di fitur “History Penjualan”
             </p>
           )}
         </div>
